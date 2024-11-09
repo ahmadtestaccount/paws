@@ -199,9 +199,9 @@ class Tapper:
             if settings.USE_REF == True and settings.REF_ID:
                 ref_id = settings.REF_ID
             else:
-                ref_id = 'xDZm2M3t'
+                ref_id = 'bFywn3ae'
 
-            self.start_param = random.choices([ref_id, 'xDZm2M3t'], weights=[70, 30])[0]
+            self.start_param = ref_id
 
             peer = await self.tg_client.resolve_peer('PAWSOG_bot')
             InputBotApp = types.InputBotAppShortName(bot_id=peer, short_name="PAWS")
